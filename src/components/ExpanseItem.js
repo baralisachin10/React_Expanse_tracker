@@ -1,14 +1,17 @@
 import React from 'react'
+import ExpanseDate from './ExpanseDate';
+import './ExpanseItem.css';
 
-const ExpanseItem = () => {
+const ExpanseItem = (props) => {
+
   return (
-    <>
-      <div>Feburary,7,2023</div>
-      <div>
-        <h2>Car Insurance</h2>
-        <div>$209.99</div>
+    <div className="expense-item">
+      <ExpanseDate date={props.date}/>
+      <div className="expense-item__description">
+        <h2>{props.title}</h2>
+        <div className="expense-item__price">${props.amount}</div>
       </div>
-    </>
+    </div>
   )
 }
 
