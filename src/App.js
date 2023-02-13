@@ -1,4 +1,4 @@
-import Expanse from "./components/Expanse";
+import Expanse from "./components/Expenses/Expanse";
 
 function App() {
    //expanses data
