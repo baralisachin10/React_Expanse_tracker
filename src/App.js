@@ -1,4 +1,5 @@
 import Expanse from "./components/Expenses/Expanse";
+import NewExpense from "./components/NewExpense/NewExpense";
 
 function App() {
    //expanses data
@@ -26,7 +27,7 @@ function App() {
 
   return (
     <div>
-      <h2>Let's get started!</h2>
+      <NewExpense/>
       <Expanse items = {expenses}/>
     </div>
   );
